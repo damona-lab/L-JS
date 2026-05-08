@@ -1,0 +1,145 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e1e2f, #2c3e50);
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* Headings */
+h2, h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs & Text */
+p, li, dd {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intro {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.js-text {
+    color: lightgreen;
+}
+
+/* Lists */
+ol, ul {
+    padding-left: 25px;
+}
+
+/* Definition List */
+dl {
+    background: #ffffff10;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+dt {
+    font-weight: bold;
+    color: gold;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #ddd;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* Fix radio & checkbox size */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: green;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: darkgreen;
+}
+
+/* Reset Button */
+input[type="reset"] {
+    background: red;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background: darkred;
+}

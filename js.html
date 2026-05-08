@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let age = 18;
+        let text = "not old enough to vote";
+        if (age >= 18) {
+            text = "old enough to vote"
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    <p id="demo2"></p>
+    <script>
+
+        let time = new Date().getHours();
+        let greetings;
+        if (time < 20) {
+            greetings = "Good day";
+        } else if (time < 24) {
+            greetings = "Good evening";
+        }
+        document.getElementById("demo2").innerHTML = greetings;
+    </script>
+    <p id="demo3"></p>
+    <script>
+        function sayHello() {
+            return "Hello, World!";
+        }
+        let greeting = sayHello();
+        document.getElementById("demo3").innerHTML = greeting;
+    </script>
+    <p id="demo4"></p>
+    <script>
+        const cars = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+        document.getElementById("demo4").innerHTML = cars.type + " " + cars.model + " " + cars.color;
+    </script>
+    <p id="demo5"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("demo5").innerHTML = person.fullName();
+    </script>
+</body>
+
+</html>
